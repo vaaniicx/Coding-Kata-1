@@ -6,5 +6,10 @@ describe('Find Spaceship', function() {
 	it('Should return "Spaceship lost forever." for given map', function() {
 		expect(spaceship.find(''))
 			.toEqual('Spaceship lost forever.');
-	})
+	});
+
+	it('Should return "Spaceship lost forever." for given map', function() {
+		expect(spaceship.find('..\n..'))
+			.toEqual('Spaceship lost forever.');
+	});
 });
