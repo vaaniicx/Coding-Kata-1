@@ -17,4 +17,9 @@ describe('Find Spaceship', function() {
         expect(spaceship.find('...\n.X.'))
             .toEqual('Ship found at (1, 0).');
     });
+
+	it('Should return [7,2] for given map', function() {
+        expect(spaceship.find('..........\n..........\n..........\n.......X..\n..........\n..........'))
+            .toEqual("Ship found at (7, 2).");
+    });
 });
